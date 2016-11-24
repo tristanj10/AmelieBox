@@ -1,9 +1,17 @@
-<h1>
-  {{title}}
-</h1>
-<nav>
-<a routerLink="/concept">Concept</a>
-<a routerLink="/contact">Contact</a>
-</nav>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="row">
+    <div class="navbar navbar-default col-lg-12 menu">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/">{{title}}</a>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li [routerLinkActive]="['active']"><a routerLink="/accueil"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+        <li [routerLinkActive]="['active']"><a routerLink="/concept">CONCEPT</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink="/abonnement">ABONNEMENT</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink="/magasin">MAGASIN</a></li>
+        <li [routerLinkActive]="['active']"><a routerLink="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

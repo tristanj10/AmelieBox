@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   public nom : string;
-  private prenom : string;
   private mail : string;
   private message : string;
 
@@ -17,16 +16,16 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.nom = " ";
-    this.prenom = " ";
+    this.nom = "";
     this.mail = "";
     this.message = "";
   }
 
-  onClick(nom, prenom, mail, message){
-    if (nom != "" && prenom!=""){
-      this.prenom = nom;
-      this.nom = prenom;
+  onClick(nom, mail, message){
+    if (nom != "" && mail != "" && message != ""){
+      this.nom = nom;
+      this.mail = mail;
+      this.message = message;
     }else{
       alert("Tu fou ma gueule ?!");
     }

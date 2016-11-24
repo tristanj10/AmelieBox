@@ -1,0 +1,17 @@
+.img{
+    height: 200px;
+    outline: 1px solid black;
+}
+
+.navbar a{
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+}
+
+.navbar{
+    background-color: whitesmoke;
+    border: none;
+}

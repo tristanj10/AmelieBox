@@ -8,12 +8,20 @@ import { ConceptComponent } from './concept/concept.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { routing } from './app.routing';
+import { AccueilComponent } from './accueil/accueil.component';
+import { AbonnementComponent } from './abonnement/abonnement.component';
+import { MagasinComponent } from './magasin/magasin.component';
+import { CarouselComponent } from './accueil/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConceptComponent,
-    ContactComponent
+    ContactComponent,
+    AccueilComponent,
+    AbonnementComponent,
+    MagasinComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
